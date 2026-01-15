@@ -1,0 +1,159 @@
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8fafd; /* clean, light base color */
+    color: #333;
+  }
+  
+  /*Navigation Bar */
+  
+  nav {
+    background-color: #0e5c7d; /* calming deep teal/blue */
+    padding: 1rem 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  nav h1 {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  nav ul li {
+    margin: 0;
+  }
+  
+  nav ul li a,
+  nav ul li button {
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 0.8rem;
+    background: none;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    transition: background 0.3s, border 0.3s;
+  }
+  
+  nav ul li a:hover,
+  nav ul li button:hover {
+    background-color: #3a8fcf; /* lighter blue for hover */
+    border-color: white;
+  }
+  
+  /* Search input */
+  #conditionInput {
+    padding: 0.4rem 0.6rem;
+    border: 2px solid #3a8fcf;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  /*Container & Layout*/
+  
+  .container {
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 0 1rem;
+  }
+  
+  /* Analysis Form */
+  
+  .analysisForm {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .analysisForm h1 {
+    text-align: center;
+    color: #0e5c7d;
+    margin-bottom: 1rem;
+  }
+  
+  .analysisForm div {
+    margin-bottom: 1rem;
+  }
+  
+  .analysisForm label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #2a4858;
+  }
+  
+  .analysisForm input[type="text"],
+  .analysisForm input[type="number"],
+  .analysisForm select {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #b8c7d1;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .analysisForm input[type="radio"] {
+    margin-left: 0.5rem;
+  }
+  
+  .analysisForm #addPatient {
+    background-color: #28a745; /* healthy green CTA */
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .analysisForm #addPatient:hover {
+    background-color: #218838;
+  }
+  
+  /* Report & Results*/
+  
+  #report {
+    padding: 1rem;
+    background: #eef6fb; /* very light blue background */
+    border: 1px solid #c8dbe6;
+    border-radius: 8px;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #1d405a;
+  }
+  
+  /*Search Result Box */
+  
+  .searchCondition {
+    background: #fff;
+    padding: 1.2rem;
+    border-radius: 10px;
+    border: 1px solid #d4e3ed;
+  }
+  
+  /*Responsive*/
+     
+  
+  @media (max-width: 768px) {
+    nav h1 {
+      font-size: 1.4rem;
+    }
+    .analysisForm #addPatient {
+      font-size: 1rem;
+    }
+  }
+  
